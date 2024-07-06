@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Доказательство ирациональности числа e</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+
+<div class="dot"></div>
+<div class="cursor"></div>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="scripts/JavaScriptCursor.js"></script>
+
+<form class="topnav">
+    <a href="main.html">Начало</a>
+    <a href="constPi.html">Константа π</a>
+    <a class="active" href="main.html">Назад↑</a>
+    <a href="otherTeory.html">Операции над числами</a>
+
+    <div class="SearchB">
+        <input class="place_for_search" type="text" id="text-to-find" value="" placeholder="Неможете найти?">
+        <input class="button_for_search" type="submit" style="margin: 12px 615px;"
+               onclick="javascript: FindOnPage('text-to-find',true); return false;"
+               value="Найти" title="Начать поиск">
+    </div>
+</form>
+
+<p style="font: 25px 'Times New Roman'">Ниже приведено доказательство ирациональности числа e</p>
+<img src="imgs/eИрациональность.PNG" alt="Ирациональность e">
+<script src="scripts/JavaScriptMain.js"></script>
+<script src="scripts/JavaScriptSearch.js"></script>
+
+</body>
+
+</html>

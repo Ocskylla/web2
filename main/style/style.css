@@ -1,0 +1,192 @@
+body {
+    background-color: black;
+}
+
+p {
+    font: 20px Times New Roman;
+    color: white;
+}
+
+.Calc {
+    position: absolute;
+    vertical-align: top;
+    left: 560px;
+
+    background: #3C108C;
+    width: 225px;
+    margin: 20px auto;
+    padding-top: 5px;
+    padding-bottom: 20px;
+}
+
+.CalcMain {
+    vertical-align: top;
+    position: relative;
+    background: #3C108C;
+    width: 225px;
+    margin: 20px auto;
+    padding-top: 5px;
+    padding-bottom: 20px;
+}
+
+input[type="submit"] {
+    width: 50px;
+    height: 30px;
+    opacity: 0.8;
+    border: none;
+}
+
+input[type="button"], input[type="reset"] {
+    width: 50px;
+    height: 50px;
+    opacity: 0.8;
+    border: none;
+}
+
+input[type="text"] {
+    border: none;
+    outline: none;
+    opacity: 0.8;
+    height: 25px;
+    width: 160px;
+}
+
+input:hover {
+    opacity: 1;
+    background-color: honeydew;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: #3c108c;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: #ffffff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    background-color: #a210d4;
+    color: #ffffff;
+}
+
+.topnav a.active {
+    background-color: #8c41ff;
+    color: white;
+}
+
+.topnav input[type=text] {
+    float: right;
+    padding: 6px;
+    border: none;
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size: 17px;
+}
+
+@media screen and (max-width: 600px) {
+    .topnav a, .topnav input[type=text] {
+        float: none;
+        display: block;
+        text-align: left;
+        width: 100%;
+        margin: 0;
+        padding: 14px;
+    }
+
+    .topnav input[type=text] {
+        border: 0.5px solid #17bcae;
+    }
+}
+
+.button_for_search {
+    position: absolute;
+    text-align: center;
+    background-color: #8c41ff;
+}
+
+.button_for_search:hover {
+    position: absolute;
+    margin: 12px 775px;
+    text-align: center;
+    background-color: #00ffe4;
+}
+
+.calcButton {
+    background-color: #a16ef3;
+    color: white;
+}
+
+.constButton {
+    background-color: #a16ef3;
+    color: white;
+}
+
+.resetButtonClass {
+    background-color: #e2901a;
+    color: white;
+}
+
+.resultButton {
+    background-color: #e2901a;
+    color: white;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    user-select: none;
+    cursor: none;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    position: fixed;
+    background-color: #a210d4;
+    border-radius: 50%;
+    margin: -4px 0 0 -4px;
+    z-index: 9999;
+    pointer-events: none;
+}
+
+.dot:active {
+    width: 100px;
+    height: 10px;
+    position: fixed;
+    background-color: #ff00b7;
+    border-radius: 50%;
+    margin: -4px 0 0 -4px;
+    z-index: 9999;
+    pointer-events: none;
+}
+
+.cursor {
+    width: 40px;
+    height: 40px;
+    background-color: rgb(149, 0, 255, 0);
+    border: 1px solid #be65ff;
+    border-radius: 50%;
+    position: fixed;
+    margin: -20px 0 0 -20px;
+    z-index: 9999;
+    pointer-events: none;
+}
+
+.cursor:active {
+    width: 40px;
+    height: 40px;
+    background-color: rgb(149, 0, 255, 0);
+    border: 2px solid #9200ff;
+    border-radius: 50%;
+    position: fixed;
+    margin: -20px 0 0 -20px;
+    z-index: 9999;
+    pointer-events: none;
+}

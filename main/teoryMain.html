@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Калькулятор</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+
+<div class="dot"></div>
+<div class="cursor"></div>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="scripts/JavaScriptCursor.js"></script>
+
+<form class="topnav">
+    <a class="active" href="main.html">Назад↑</a>
+    <a href="constPi.html">Константа π</a>
+    <a href="constE.html">Константа e</a>
+    <a href="otherTeory.html">Операции над числами</a>
+
+    <div class="SearchB">
+        <input class="place_for_search" type="text" id="text-to-find" value="" placeholder="Неможете найти?">
+        <input class="button_for_search" type="submit" style="margin: 12px 595px;"
+               onclick="javascript: FindOnPage('text-to-find',true); return false;"
+               value="Найти" title="Начать поиск">
+    </div>
+</form>
+
+<p align="center">Калькулятор</p>
+
+
+<div class="CalcMain">
+    <form>
+        <table>
+            <tr>
+                <td colspan="3"><input type="text" id="textField"></td>
+
+                <td><input class="resultButton" type="submit" id="submitButton" value="="/></td>
+            </tr>
+            <tr>
+                <td><input class="calcButton" type="button" value="1" onclick="addToField(1)"/></td>
+
+                <td><input class="calcButton" type="button" value="2" onclick="addToField(2)"/></td>
+
+                <td><input class="calcButton" type="button" value="3" onclick="addToField(3)"/></td>
+
+                <td><input class="calcButton" type="button" value="-" onclick="addToField('-')"/></td>
+            </tr>
+            <tr>
+                <td><input class="calcButton" type="button" value="4" onclick="addToField(4)"/></td>
+
+                <td><input class="calcButton" type="button" value="5" onclick="addToField(5)"/></td>
+
+                <td><input class="calcButton" type="button" value="6" onclick="addToField(6)"/></td>
+
+                <td><input class="calcButton" type="button" value="+" onclick="addToField('+')"/></td>
+            </tr>
+            <tr>
+                <td><input class="calcButton" type="button" value="7" onclick="addToField(7)"/></td>
+
+                <td><input class="calcButton" type="button" value="8" onclick="addToField(8)"/></td>
+
+                <td><input class="calcButton" type="button" value="9" onclick="addToField(9)"/></td>
+
+                <td><input class="calcButton" type="button" value="/" onclick="addToField('/')"/></td>
+            </tr>
+            <tr>
+                <td><input class="calcButton" type="button" value="." onclick="addToField('.')"/></td>
+
+                <td><input class="calcButton" type="button" value="0" onclick="addToField(0)"/></td>
+
+                <td><input class="constButton" type="button" value="π" onclick="addToField(3.14159265359)"/></td>
+
+                <td><input class="calcButton" type="button" value="*" onclick="addToField('*')"/></td>
+            </tr>
+            <tr>
+
+                <td><input class="calcButton" type="button" value="^" onclick="addToField('**')"/></td>
+
+                <td><input class="constButton" type="button" value="e" onclick="addToField(2.71828182845)"/></td>
+
+                <td><input class="resetButtonClass" type="reset" value="C" id="resetButton"/></td>
+
+                <td><input class="calcButton" type="button" value="%" onclick="addToField('%')"/></td>
+            </tr>
+        </table>
+    </form>
+</div>
+
+<p align="center">В этом разделе вы можете попробовать что то посчитать)</p>
+
+<script src="scripts/JavaScriptMain.js"></script>
+<script src="scripts/JavaScriptSearch.js"></script>
+</body>
+
+</html>

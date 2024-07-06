@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Доказательство ирациональности числа π</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+
+<div class="dot"></div>
+<div class="cursor"></div>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="scripts/JavaScriptCursor.js"></script>
+
+<form class="topnav">
+    <a href="main.html">Начало</a>
+    <a class="active" href="main.html">Назад↑</a>
+    <a href="constE.html">Константа e</a>
+    <a href="otherTeory.html">Операции над числами</a>
+
+    <div class="SearchB">
+        <input class="place_for_search" type="text" id="text-to-find" value="" placeholder="Неможете найти?">
+        <input style="margin: 12px 635px;" class="button_for_search" type="submit"
+               onclick="javascript: FindOnPage('text-to-find',true); return false;"
+               value="Найти" title="Начать поиск">
+    </div>
+</form>
+
+<p style="font: 25px 'Times New Roman';">Доказательство иррациональности π</p>
+<p>В 1760-х Иоганн Генрих Ламберт доказал, что число π иррационально, то есть не может быть представлено дробью a/b, где
+    a — целое число, а b — ненулевое целое число. В XIX веке Чарльз Эрмит нашел еще одно доказательство, пользуясь
+    только базовыми средствами математического анализа. В дальнейшем Мэри Картрайт, Айвен Нивен и Никола Бурбаки смогли
+    упростить доказательство Эрмита, а Миклош Лачкович упростил доказательство Ламберта.</p>
+<p>В 1882 году Фердинанд фон Линдеманн доказал, что π не только иррационально, но и трансцендентно</p>
+<p>Скан формулы со стр. 288 из труда Ламберта «Mémoires sur quelques propriétés remarquables des quantités
+    transcendantes, circulaires et logarithmiques», Mémoires de l’Académie royale des sciences de Berlin (1768),
+    265—322.</p>
+<img src="imgs/ЛамбертДокво.jpg" alt="Доказательство Ламберта">
+<p>В 1761 году Ламберт доказал иррациональность π, исходя из найденного им представление тангенса в виде непрерывной
+    дроби</p>
+<p>Ламберт доказал, что если x не равно нулю и рационально, то это выражение иррационально. Так как tg(π/4) = 1, отсюда
+    следует, что π/4 иррационально и, следовательно, π иррационально тоже.</p>
+
+
+<script src="scripts/JavaScriptMain.js"></script>
+<script src="scripts/JavaScriptSearch.js"></script>
+
+</body>
+
+</html>

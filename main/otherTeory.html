@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Операции над числами</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+
+<div class="dot"></div>
+<div class="cursor"></div>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="scripts/JavaScriptCursor.js"></script>
+
+<form class="topnav">
+    <a href="main.html">Начало</a>
+    <a href="constPi.html">Константа π</a>
+    <a href="constE.html">Константа e</a>
+    <a class="active" href="main.html">Назад↑</a>
+
+    <div class="SearchB">
+        <input class="place_for_search" type="text" id="text-to-find" value="" placeholder="Неможете найти?">
+        <input class="button_for_search" type="submit" style="margin: 12px 695px;"
+               onclick="javascript: FindOnPage('text-to-find',true); return false;"
+               value="Найти" title="Начать поиск">
+    </div>
+</form>
+
+<p style="font: 25px 'Times New Roman';">Операции над числами</p>
+<div class="Calc" align="right">
+    <form>
+        <table>
+            <tr>
+                <td colspan="3"><input type="text" id="textField"></td>
+
+                <td><input class="resultButton" type="submit" id="submitButton" value="="/></td>
+            </tr>
+            <tr>
+                <td><input class="calcButton" type="button" value="1" onclick="addToField(1)"/></td>
+
+                <td><input class="calcButton" type="button" value="2" onclick="addToField(2)"/></td>
+
+                <td><input class="calcButton" type="button" value="3" onclick="addToField(3)"/></td>
+
+                <td><input class="calcButton" type="button" value="-" onclick="addToField('-')"/></td>
+            </tr>
+            <tr>
+                <td><input class="calcButton" type="button" value="4" onclick="addToField(4)"/></td>
+
+                <td><input class="calcButton" type="button" value="5" onclick="addToField(5)"/></td>
+
+                <td><input class="calcButton" type="button" value="6" onclick="addToField(6)"/></td>
+
+                <td><input class="calcButton" type="button" value="+" onclick="addToField('+')"/></td>
+            </tr>
+            <tr>
+                <td><input class="calcButton" type="button" value="7" onclick="addToField(7)"/></td>
+
+                <td><input class="calcButton" type="button" value="8" onclick="addToField(8)"/></td>
+
+                <td><input class="calcButton" type="button" value="9" onclick="addToField(9)"/></td>
+
+                <td><input class="calcButton" type="button" value="/" onclick="addToField('/')"/></td>
+            </tr>
+            <tr>
+                <td><input class="calcButton" type="button" value="." onclick="addToField('.')"/></td>
+
+                <td><input class="calcButton" type="button" value="0" onclick="addToField(0)"/></td>
+
+                <td><input class="constButton" type="button" value="π" onclick="addToField(3.14159265359)"/></td>
+
+                <td><input class="calcButton" type="button" value="*" onclick="addToField('*')"/></td>
+            </tr>
+            <tr>
+
+                <td><input class="calcButton" type="button" value="^" onclick="addToField('**')"/></td>
+
+                <td><input class="constButton" type="button" value="e" onclick="addToField(2.71828182845)"/></td>
+
+                <td><input class="resetButtonClass" type="reset" value="C" id="resetButton"/></td>
+
+                <td><input class="calcButton" type="button" value="%" onclick="addToField('%')"/></td>
+            </tr>
+        </table>
+    </form>
+</div>
+
+<p><b>Свойства сложения<b></p>
+<p>a + b = b + a - переместительное свойство</p>
+<p>(a + b) +c = a + (b + c) - сочетательное свойство</p>
+<p>a + 0 = a - свойство нуля</p>
+<p>a + (-a) = 0 - сумма противоположных чисел</p>
+<p><b>Свойства вычитания<b></p>
+<p>a - (b + c) = a - b - c вычитание суммы чисел от числа</p>
+<p>(a + b) - c = (a - c) + b = a + (b - c) - вычитание числа от суммы</p>
+<p>a - 0 = a - свойство нуля</p>
+<p>0 - a = -a - свойство нуля</p>
+<p><b>Свойства умножения<b></p>
+<p>a· b = b· a - переместительное свойство</p>
+<p>(a · b)· c = a· (b · c) -сочетательное свойство</p>
+<p>(a - b)· c = a · c - b · c - распределительное свойство</p>
+<p>(a + b)· c = a · c + b · c - распределительное свойство</p>
+<p>a · 1 = a - свойство единицы</p>
+<p>a · 0 = 0 - свойство нуля</p>
+<p>a · 1/a = 1, a≠0 - свойство обратных чисел</p>
+<p><b>Свойства деления<b></p>
+<p>(a · b) : c = a · (b : c) = (a : c) · b - деления произведения на число</p>
+<p>(a + b) : c = a : c + b : c - деление суммы на число</p>
+<p>(a - b) : c = a : c - b : c - деление разности на число</p>
+<p>a : (b ·c) = (a: b) :c = (a : c) : b - деление числа на произведение</p>
+<p>a : 1 = a; 0 : a = 0 ; a : a = 1, a≠0 - свойство единицы и нуля</p>
+
+
+<script src="scripts/JavaScriptMain.js"></script>
+<script src="scripts/JavaScriptSearch.js"></script>
+
+</body>
+
+</html>
